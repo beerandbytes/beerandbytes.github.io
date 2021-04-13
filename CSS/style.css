@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+body {
+	margin: 0;
+	background: #e5e0e0;
+	font-family: 'Slabo', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #41a57a;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 45px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+p{
+  text-align: center;
+
+}
+
+.wrapper{
+
+  display: grid;
+  /*grid-template-columns: 1fr 2fr 1fr ;*/
+  /*another way to put it is*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  /*grid-auto-rows: 100px; the next line of code allows to make flexible row spacing in case that
+  the content goes out of the row*/
+
+
+}
+
+  .wrapper > div {
+
+  background:#b0b0b0;
+  padding: 10px;
+
+  }
+  .wrapper > div:nth-child(odd){
+  background: #b0b0b0;
+  }
+
+
+footer{
+  background-color: #5e5e5e;
+  padding-bottom: 20px;
+
+}
